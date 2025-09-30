@@ -1,0 +1,29 @@
+<!-- views/form.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- call in the css for uv index form page (where user inputs data)-->
+    <title>UV Index</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+
+<body>
+    <!--have user input their location as long and lat coordinates-->
+    <h1>Check UV Index</h1>
+    <form action="/getuv" method="POST">
+        <label for="latitude">Latitude:</label>
+        <input type="text" id="latitude" name="latitude" class= "corInput" required>
+        <br>
+        <br>
+        <label for="longitude">Longitude:</label>
+        <input type="text" id="longitude" name="longitude" class= "corInput" required>
+        <br>
+        <br>
+        <br>
+        <!-- submit button -->
+        <button type="submit">Get UV Index</button>
+    </form>
+</body>
+</html>

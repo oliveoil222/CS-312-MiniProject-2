@@ -1,0 +1,26 @@
+<!-- views/out.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- call in the css for uv index result page-->
+    <title>UV Index Result:</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>UV Index Result:</h1>
+    <!-- display the uv index value for the given coordinates -->
+    <% if (uvData && uvData.result) { %>
+        <p>The current UV Index at the provided coordinates is: <%= uvData.result.uv %></p>
+       <!-- display safety recommendation based on uv index-->
+        <p>Safety Recommendation: <%= uvAdvice %></p>
+        <!-- display button to go back home to main page-->
+        <a href="/"><button>Back to Home</button></a>
+    <% } else { %>
+        <!-- give error if data can't be retrieved-->
+        <p>Error retrieving UV data. Please try again.</p>
+        <!-- display button to go back to form page to try again-->
+        <a href="/uvform"><button>Back to Form</button></a>
+    <% } %>
+</body>
+</html>

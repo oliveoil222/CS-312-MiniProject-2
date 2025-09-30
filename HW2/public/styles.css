@@ -1,0 +1,37 @@
+/* public/styles.css */
+
+/* create base for pages so they have a consistent style */
+body {
+    display: block;
+    background-color: rgb(220, 152, 17);
+    font-family: Courier, monospace;
+    font-size: 18px; 
+    text-align: center;
+    color: rgb(93, 12, 12);}
+
+/* style the buttons as they appear untouched */
+button {
+    border: 2px solid #000000;
+    font-family: Courier, monospace;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #feed81;
+    color: rgb(93, 12, 12);
+    padding: 0.625em 1.875em;
+    cursor: pointer;
+    border-radius: 1.875em;
+    text-align: center; }
+
+/* style the buttons when hovered over */
+button:hover {
+    background-color: #f7d46d; }
+
+/* style the input boxes */
+.corInput {
+    border: 2px solid #000000;
+    font-family: Courier, monospace;
+    font-size: 1em;
+    padding: 0.625em 1.875em;
+    border-radius: 1.875em;
+    text-align: center;
+    background-color: beige; }
